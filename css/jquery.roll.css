@@ -1,0 +1,44 @@
+div.roll-container{
+	position: relative;
+	overflow: hidden;
+}
+
+div.roll-wrapper{
+	position: relative;
+	overflow: hidden;
+	padding: 0 0 0 100px;
+}
+
+div.roll-control{
+	position: absolute;
+	width: 100px;
+	height: 100%;
+	background-color: rgba(255,255,255,0.9);
+	z-index: 9;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 40px auto;
+	cursor: pointer;
+}
+
+div.roll-control.left{
+	left: 0;
+	background-image: url('img/chevron-l.svg');
+}
+
+div.roll-control.right{
+	right: 0;
+	background-image: url('img/chevron-r.svg');
+}
+
+div.roll-control.disabled{
+	cursor: default;
+}
+
+div.roll-control.disabled.left{
+	background-image: url('img/chevron-l-o.svg');
+}
+
+div.roll-control.disabled.right{
+	background-image: url('img/chevron-r-o.svg');
+}
